@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oswald&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.photo {
+  background-image: url(/img/d_d.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo:not(:hover) {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.nav {
+  font-family: "Oswald", sans-serif;
+  width: 100vw;
+  height: 60px;
+
+  color: black;
+  justify-content: center;
+}
+
+.nav nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  margin: 0 0px;
+}
+
+.nav nav p {
+  text-transform: uppercase;
+  width: 1500px;
+  font-size: 2rem;
+  margin: 0 15px
+  
+  ;
+}
+.nav nav ul {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  min-width: 575px;
+  height: 100%;
+  justify-content: space-between;
+
+  margin: 0 15px;
+}
+.nav nav ul li{
+
+    
+}
+
+.nav nav ul li:hover {
+  background-color: black;
+  color: white;
+
+  transition: 1s;
+}
+.btn {
+  font-family: "Oswald", sans-serif;
+  margin: 0 25px;
+  width: 125px;
+  height: 50px;
+  background: black;
+  color: white;
+  border: none;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+  border: 4px solid black;
+}
+
+.photo:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.merch{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.card p {
+    font-size: 2rem;
+    color :  white;
+     font-family: "Oswald", sans-serif;
+
+}
+
+.card:nth-child(1):not(:hover){
+    background-image: url(./img/Merch1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px) grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+
+
+}
+
+
+.card:nth-child(1):hover{
+    background-image: url(./img/Merch1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   transition: .8s ease-in-out;
+    filter: blur(0px);
+}
+
+
+.card:nth-child(2):not(:hover){
+    background-image: url(./img/Merch2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px) grayscale(100%);
+    transition: filter 0.5s ease-in-out;
+}
+.card:nth-child(2):hover{
+    background-image: url(./img/Merch2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .8s ease-in-out;
+     filter: blur(0px);
+ }
+
+
